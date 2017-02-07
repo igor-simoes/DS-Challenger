@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {% block title %}
+                DS Challenger - home
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        {% block content %}
+        <a href="{% url 'popular_themes' %}">Get Popular Themes</a>
+        {% endblock %}
+    </body>
+</html>

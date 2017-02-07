@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Get Popular Themes
+{% endblock %}
+
+{% block content %}
+
+<h1>Themes by popularity:</h1>
+
+{% for theme in themes %}
+    <h3>{{theme.id}} {{theme.name}}</h3>
+{% endfor %}
+
+{% endblock %}
